@@ -14,7 +14,7 @@ Return the updated matrix.
 
 Example 1:
 
-(graph1)[]
+(graph1)[https://assets.leetcode.com/uploads/2025/07/20/gridexmdrawio.png]
 
 Input: grid = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], x = 1, y = 0, k = 3
 
@@ -27,7 +27,7 @@ The diagram above shows the grid before and after the transformation.
 
 Example 2:
 
-(graph2)[]
+(graph2)[https://assets.leetcode.com/uploads/2025/07/20/gridexm2drawio.png]
 
 Input: grid = [[3,4,2,3],[2,3,4,2]], x = 0, y = 2, k = 2
 
