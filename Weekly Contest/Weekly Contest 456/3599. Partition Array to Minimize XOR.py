@@ -94,10 +94,10 @@ if __name__ == "__main__":
     sol = Solution()
 
     # Example 1
-    print(sol.minXor([1, 2, 3], 2))  # Output: 1
+    print(sol.minXor([1, 2, 3], 2))  # 1
 
     # Example 2
-    print(sol.minXor([2, 3, 3, 2], 3))  # Output: 2
+    print(sol.minXor([2, 3, 3, 2], 3))  # 2
 
     # Example 3
-    print(sol.minXor([1, 1, 2, 3, 1], 2))  # Output: 0
+    print(sol.minXor([1, 1, 2, 3, 1], 2))  # 0
