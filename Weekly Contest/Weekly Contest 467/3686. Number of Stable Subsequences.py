@@ -8,7 +8,7 @@ A subsequence is stable if it does not contain three consecutive elements with t
 
 Return the number of stable subsequences.
 
-Since the answer may be too large, return it modulo 109 + 7.
+Since the answer may be too large, return it modulo 10^9 + 7.
 
 
 

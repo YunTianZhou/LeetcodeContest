@@ -12,7 +12,7 @@ A ZigZag array of length n is defined as follows:
 
 Return the total number of valid ZigZag arrays.
 
-Since the answer may be large, return it modulo 109 + 7.
+Since the answer may be large, return it modulo 10^9 + 7.
 
 A sequence is said to be strictly increasing if each element is strictly greater than its previous one (if exists).
 

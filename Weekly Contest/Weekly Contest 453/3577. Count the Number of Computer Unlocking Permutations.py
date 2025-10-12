@@ -12,7 +12,7 @@ You can decrypt the password for the computer i using the password for computer 
 To decrypt the password for computer i, you must have already unlocked a computer j such that j < i and complexity[j] < complexity[i].
 Find the number of permutations of [0, 1, 2, ..., (n - 1)] that represent a valid order in which the computers can be unlocked, starting from computer 0 as the only initially unlocked one.
 
-Since the answer may be large, return it modulo 109 + 7.
+Since the answer may be large, return it modulo 10^9 + 7.
 
 Note that the password for the computer with label 0 is decrypted, and not the computer with the first position in the permutation.
 

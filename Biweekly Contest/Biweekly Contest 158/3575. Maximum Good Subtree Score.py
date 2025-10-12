@@ -12,7 +12,7 @@ Define an array maxScore of length n, where maxScore[u] represents the maximum p
 
 Return the sum of all values in maxScore.
 
-Since the answer may be large, return it modulo 109 + 7.
+Since the answer may be large, return it modulo 10^9 + 7.
 
 A subset of an array is a selection of elements (possibly none) of the array.
 

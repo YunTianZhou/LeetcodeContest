@@ -6,7 +6,7 @@ You are given an integer array nums and an integer k. Your task is to partition 
 
 Return the total number of ways to partition nums under this condition.
 
-Since the answer may be too large, return it modulo 109 + 7.
+Since the answer may be too large, return it modulo 10^9 + 7.
 
  
 

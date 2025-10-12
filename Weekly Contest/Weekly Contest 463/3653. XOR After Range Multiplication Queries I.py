@@ -8,7 +8,7 @@ For each query, you must apply the following operations in order:
 
 Set idx = li.
 While idx <= ri:
-    Update: nums[idx] = (nums[idx] * vi) % (109 + 7)
+    Update: nums[idx] = (nums[idx] * vi) % (10^9 + 7)
     Set idx += ki.
 
 Return the bitwise XOR of all elements in nums after processing all queries.

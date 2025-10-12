@@ -8,7 +8,7 @@ A horizontal trapezoid is a convex quadrilateral with at least one pair of horiz
 
 Return the number of unique horizontal trapezoids that can be formed by choosing any four distinct points from points.
 
-Since the answer may be very large, return it modulo 109 + 7.
+Since the answer may be very large, return it modulo 10^9 + 7.
 
 
 
