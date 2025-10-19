@@ -1,0 +1,95 @@
+"""
+3720. Lexicographically Smallest Permutation Greater Than Target - Medium
+
+
+You are given two strings s and target, both having length n, consisting of lowercase English letters.
+
+Return the lexicographically smallest permutation of s that is strictly greater than target. If no permutation of s is lexicographically strictly greater than target, return an empty string.
+
+A string a is lexicographically strictly greater than a string b (of the same length) if in the first position where a and b differ, string a has a letter that appears later in the alphabet than the corresponding letter in b.
+
+
+
+Example 1:
+
+Input: s = "abc", target = "bba"
+
+Output: "bca"
+
+Explanation:
+
+The permutations of s (in lexicographical order) are "abc", "acb", "bac", "bca", "cab", and "cba".
+
+The lexicographically smallest permutation that is strictly greater than target is "bca".
+
+
+Example 2:
+
+Input: s = "leet", target = "code"
+
+Output: "eelt"
+
+Explanation:
+
+The permutations of s (in lexicographical order) are "eelt", "eetl", "elet", "elte", "etel", "etle", "leet", "lete", "ltee", "teel", "tele", and "tlee".
+
+The lexicographically smallest permutation that is strictly greater than target is "eelt".
+
+
+Example 3:
+
+Input: s = "baba", target = "bbaa"
+
+Output: ""
+
+Explanation:
+
+The permutations of s (in lexicographical order) are "aabb", "abab", "abba", "baab", "baba", and "bbaa".
+
+None of them is lexicographically strictly greater than target. Therefore, the answer is "".
+
+
+
+Constraints:
+
+1 <= s.length == target.length <= 300
+s and target consist of only lowercase English letters.
+"""
+
+from collections import Counter
+
+
+class Solution:
+    def lexGreaterPermutation(self, s: str, target: str) -> str:
+        cnt = Counter(s)
+        for i, c in enumerate(target):
+            cnt[c] -= 1
+            if cnt[c] < 0:
+                break
+
+        for i in range(i, -1, -1):
+            cnt[target[i]] += 1
+            mn = min((c for c, x in cnt.items() if x > 0 and c > target[i]), default="~")
+
+            if mn != "~":
+                ans = target[: i] + mn
+
+                cnt[mn] -= 1
+                ans += "".join(x * c for c, x in sorted(cnt.items()))
+
+                return ans
+        
+        return ""
+
+
+if __name__ == "__main__":
+    sol = Solution()
+
+    # Example 1
+    print(sol.lexGreaterPermutation("abc", "bba"))  # "bca"
+
+    # Example 2
+    print(sol.lexGreaterPermutation("leet", "code"))  # "eelt"
+
+    # Example 3
+    print(sol.lexGreaterPermutation("baba", "bbaa"))  # ""
