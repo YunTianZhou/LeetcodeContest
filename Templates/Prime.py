@@ -13,6 +13,8 @@ for i in range(2, int(m ** 0.5) + 1):
         for j in range(i * i, m + 1, i):
             is_prime[j] = False
 
+primes = [i for i in range(2, m + 1) if is_prime[i]]
+
 
 # Smallest Prime Factor (SPF)
 spf = list(range(m + 1))
@@ -59,7 +61,7 @@ def is_prime_naive(x: int) -> bool:
         return False
     if x % 2 == 0:
         return x == 2
-    for i in range(3, int(x**0.5) + 1, 2):
+    for i in range(3, int(x ** 0.5) + 1, 2):
         if x % i == 0:
             return False
     return True
@@ -70,7 +72,7 @@ def smallest_prime_factor_naive(x: int):
         return None
     if x % 2 == 0:
         return 2
-    for i in range(3, int(x**0.5) + 1, 2):
+    for i in range(3, int(x ** 0.5) + 1, 2):
         if x % i == 0:
             return i
     return x
