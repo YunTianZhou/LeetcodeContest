@@ -20,7 +20,7 @@ However, there are some constraints on the route.
 
  - You cannot stay on the same row for two consecutive turns. If you stay on the same row in a move (and this move is not the last move), your next move must go to the row above.
 
-Return an integer denoting the number of such routes. Since the answer may be very large, return it modulo 109 + 7.
+Return an integer denoting the number of such routes. Since the answer may be very large, return it modulo 10^9 + 7.
 
 
 

@@ -16,7 +16,7 @@ Formally, for blocks b1, b2, …:
 
  - XOR(b3) = target1, and so on.
 
-Return the number of valid partitions of nums, modulo 109 + 7.
+Return the number of valid partitions of nums, modulo 10^9 + 7.
 
 Note: A single block is valid if its XOR equals target1.
 

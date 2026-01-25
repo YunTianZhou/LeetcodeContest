@@ -12,7 +12,7 @@ For each queries[i], extract the substring s[li..ri]. Then, perform the followin
 
  - Return an array of integers answer where answer[i] is the answer to the ith query.
 
-Since the answers may be very large, return them modulo 109 + 7.
+Since the answers may be very large, return them modulo 10^9 + 7.
 
 
 
@@ -68,7 +68,7 @@ Explanation:
     - x = 987654321
     - sum = 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 45
     - Therefore, the answer is 987654321 * 45 = 44444444445.
-    - We return 44444444445 modulo (109 + 7) = 444444137.
+    - We return 44444444445 modulo (10^9 + 7) = 444444137.
 
 
 
