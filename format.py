@@ -34,8 +34,7 @@ Constraints:
 <...>
 """
 
-from typing import List
-# Other imports can be added here as needed
+# Imports can be added here as needed
 
 
 # The solution class from the original code snippet
