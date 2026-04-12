@@ -1,10 +1,9 @@
-from typing import List
-
-
 # Temp: LazySegmentTree
 # Author: 灵茶山艾府
 # Link: https://leetcode.cn/discuss/post/mOr1u6/
 # Source: 力扣（LeetCode）
+
+
 class Node:
     __slots__ = 'val', 'todo'
 
@@ -41,7 +40,7 @@ class LazySegmentTree:
     def _maintain(self, node: int) -> None:
         self._tree[node].val = self._merge_val(self._tree[node * 2].val, self._tree[node * 2 + 1].val)
 
-    def _build(self, a: List[int], node: int, l: int, r: int) -> None:
+    def _build(self, a: list[int], node: int, l: int, r: int) -> None:
         self._tree[node].todo = self._TODO_INIT
         if l == r:
             self._tree[node].val = a[l]
