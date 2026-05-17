@@ -72,7 +72,7 @@ if __name__ == "__main__":
     sol = Solution()
 
     # Example 1
-    print(sol.canMakeEqual([1, -1, 1, -1, 1], 3))  # true
+    print(sol.canMakeEqual([1, -1, 1, -1, 1], 3))  # True
 
     # Example 2
-    print(sol.canMakeEqual([-1, -1, -1, 1, 1, 1], 5))  # false
+    print(sol.canMakeEqual([-1, -1, -1, 1, 1, 1], 5))  # False

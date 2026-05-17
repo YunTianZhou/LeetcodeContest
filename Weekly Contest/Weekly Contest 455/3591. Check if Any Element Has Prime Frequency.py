@@ -71,10 +71,10 @@ if __name__ == "__main__":
     sol = Solution()
 
     # Example 1
-    print(sol.checkPrimeFrequency([1, 2, 3, 4, 5, 4]))  # true
+    print(sol.checkPrimeFrequency([1, 2, 3, 4, 5, 4]))  # True
 
     # Example 2
-    print(sol.checkPrimeFrequency([1, 2, 3, 4, 5]))  # false
+    print(sol.checkPrimeFrequency([1, 2, 3, 4, 5]))  # False
 
     # Example 3
-    print(sol.checkPrimeFrequency([2, 2, 2, 4, 4]))  # true
+    print(sol.checkPrimeFrequency([2, 2, 2, 4, 4]))  # True
