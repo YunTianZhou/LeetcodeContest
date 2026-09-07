@@ -6,7 +6,7 @@ m = 10 ** 6
 
 
 # Prime Sieve
-is_prime = [True] * (m + 2)
+is_prime = [True] * (m + 1)
 is_prime[0] = is_prime[1] = False
 for i in range(2, int(m ** 0.5) + 1):
     if is_prime[i]:
